@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para"></p>
+    <button class="btn" onclick="give_prompt()"> Click here</button>
+    <script>
+      
+       function checkPalindrome(num){
+            let left = 0;
+            let right = num.length - 1;
+                while(left <= right){
+                if(num[left] != num[right]){
+                    return false;
+                }
+                left++;
+                right--;
+            }
+            return true;
+       }
+
+       function give_prompt(){
+        let num = prompt("Enter the string");
+        if(checkPalindrome(num)){
+            document.write("The nummber is palindrome");
+        }
+        else{
+            document.write("The nummber is not palindrome");
+        }
+       }
+      
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=
+	, initial-scale=1.0">
+	<title>Covid 19</title>
+    <style>
+          body {
+            margin: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+        .outer {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 34, 45);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .header{
+            width: 100%;
+            font-size: 60px;
+            font-weight: 600;
+            color: rgb(179, 250, 250);
+            text-align: center;
+            padding: 20px;
+            background-image: linear-gradient(to bottom,rgb(0, 75, 75),rgba(10, 150, 150, 0));
+        }
+        .cards{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(225, 251, 255, 0.249),2px 2px 10px rgba(164, 244, 255, 0.233),0px 0px 15px rgba(138, 234, 247, 0.211);
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 50px;
+            background-color: rgba(255, 255, 255, 0.095);
+            padding: 40px;
+            border-radius:5px ;
+        }
+        .cards img{
+            border: 0.01rem solid rgb(0, 92, 132);
+        }
+        .cards p{
+            font-size: 18px;
+            color: rgb(198, 242, 255);
+        }
+        .cards h2{
+            font-size: 30px;
+            font-weight: 600;
+            color: rgb(223, 255, 255);
+            
+        }
+        .cards div{
+            display: flex;
+            gap: 100px;
+            
+        }
+        @property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.cards::before,
+.cards::after {
+  content: "";
+  position: absolute;
+  inset: -0.1rem;
+  z-index: 2;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    rgb(0, 75, 75),
+    rgb(0, 146, 159),
+    rgb(157, 245, 245),
+    rgb(1, 125, 125),
+    rgb(0, 75, 75)
+  );
+  border-radius: inherit;
+  animation: moving 3s linear infinite;
+
+  mask: linear-gradient(
+      to right,
+      black 0.2%,
+      transparent 0%,
+      transparent 99.9%,
+      black 90%
+    ),
+    linear-gradient(
+      to bottom,
+      black 0.5%,
+      transparent 0%,
+      transparent 99.8%,
+      black 90%
+    );
+}
+
+@keyframes moving {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+    </style>
+</head>
+<body>
+	<div class="outer">
+		<div class="header">COVID 19: The biggest tragedy</div>
+       
+		<div class="cards">
+            <h2>The Emergence and Spread of COVID-19</h2>
+            <div>
+			<img src="https://tse3.mm.bing.net/th?id=OIP.SvLxbX_PggtSq6lIXJaV4AHaFj&pid=Api&P=0&h=180" alt="">
+			<p>COVID-19, caused by the novel coronavirus SARS-CoV-2, was first identified in December 2019 in Wuhan, China. The virus is believed to have originated from a seafood market, where it possibly jumped from an animal host to humans. Its rapid human-to-human transmission soon led to widespread outbreaks in Wuhan and surrounding regions. Despite initial containment efforts, the virus quickly spread beyond China’s borders, reaching global pandemic status by March 2020. International travel and global interconnectedness facilitated its swift dissemination, leading to surges in cases across Europe, the Americas, and eventually every continent.</p>
+        </div>
+		</div>
+		<div class="cards">
+			<h2>The Impact of COVID-19 on Health</h2>
+            <div>
+			<p>COVID-19 primarily affects the respiratory system, causing symptoms ranging from mild respiratory discomfort to severe pneumonia and acute respiratory distress syndrome (ARDS). The virus is particularly dangerous for older adults and individuals with underlying health conditions such as diabetes, heart disease, and chronic respiratory illnesses. Severe cases can lead to long-term health complications or death. Besides its direct health effects, COVID-19 has overwhelmed healthcare systems worldwide, leading to shortages of medical supplies, overburdened hospitals, and exhausted healthcare workers. Non-COVID medical treatments and elective procedures were postponed, exacerbating other health issues.</p>
+			<img src="https://tse3.mm.bing.net/th?id=OIP.SvLxbX_PggtSq6lIXJaV4AHaFj&pid=Api&P=0&h=180" alt=""></div>
+		</div>
+		<div class="cards">
+            <h2>Government and Public Health Measures</h2>
+			<div><img src="https://tse3.mm.bing.net/th?id=OIP.SvLxbX_PggtSq6lIXJaV4AHaFj&pid=Api&P=0&h=180" alt="">
+			<p>In response to the rapid spread of COVID-19, governments and public health organizations implemented a range of measures to mitigate its impact. Lockdowns and stay-at-home orders were among the most drastic, aimed at limiting movement and reducing virus transmission. Travel restrictions and quarantine protocols were established to control cross-border and community spread. Social distancing guidelines and mask mandates became ubiquitous, altering everyday interactions. Public health campaigns promoted hygiene practices like frequent handwashing and the use of hand sanitizers. Testing, contact tracing, and isolation of confirmed cases were critical in managing outbreaks, alongside efforts to ramp up healthcare capacity and supply chains for essential medical goods.</p></div>
+		</div>
+		<div class="cards">
+			<h2>The Role of Vaccination and Ongoing Efforts</h2>
+			<div><p>The development and distribution of vaccines have been pivotal in the fight against COVID-19. Scientists and pharmaceutical companies worldwide collaborated at an unprecedented pace, resulting in the authorization of several effective vaccines within a year of the virus's emergence. Mass vaccination campaigns have been rolled out globally, significantly reducing the incidence of severe illness and death. However, challenges such as vaccine hesitancy, distribution inequities, and the emergence of new variants continue to pose threats. Ongoing efforts focus on achieving widespread vaccination coverage, enhancing treatment protocols, and adapting strategies to tackle new variants. The pandemic has underscored the necessity for robust global health systems and international cooperation to better prepare for future health emergencies.</p>
+			<img src="https://tse3.mm.bing.net/th?id=OIP.SvLxbX_PggtSq6lIXJaV4AHaFj&pid=Api&P=0&h=180" alt=""></div>
+		</div>
+	</div>
+</body>
+</html>

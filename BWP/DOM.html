@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+            margin: 0px;
+        }
+        .outerDiv{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .btn{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(221, 0, 255);
+            position: absolute;
+           
+        }
+        .box{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: aqua;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="outerDiv">
+        <button class="btn">Click To Change the Background</button>
+        <div class="box">box</div>
+    </div>
+    <script>
+        const btn = document.querySelector('.btn');
+        const box = document.querySelector('.box');
+        const mainDiv = document.querySelector('.outerDiv')
+        let flagColor = false;
+        
+        function changeColor(){
+            mainDiv.style.backgroundColor = flagColor ? 'white' : 'black'
+            box.style.bottom = flagColor ? '' : '60px'
+            flagColor = !flagColor;
+   
+        }
+        btn.addEventListener('click',changeColor);
+    </script>
+</body>
+</html>

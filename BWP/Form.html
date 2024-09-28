@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        h2{
+            text-align: center;
+            color:rgb(149, 214, 244);
+        }
+
+        form span,input,label,select,button{
+            margin:10px;
+        }
+        body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          height: 100vh;
+          flex-direction: column;
+        }
+        .formCon{
+          width: 70%;
+          height: 80%;
+          border: 2px solid red;
+          background-color: aqua;
+         
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form class="formCon">
+        <label for="fname">First Name :</label>
+        <input id="fname" type="text" name='fname' placeholder="Enter First Name" value="name"></br>
+        <label for="mname">Middle Name :</label>
+        <input id="mname" type="text" placeholder="Enter Middle Name"></br>
+        <label for="lname">Last Name :</label>
+        <input id="lname" type="text" placeholder="Enter Last Name"></br>
+        <span>Gender :</span>
+        <label for="M">Male</label>
+        <input id="M" type="radio" name="Gender">
+        <label for="F">Female</label>
+        <input id="F" type="radio" name="Gender">
+        <label for="O">Others</label>
+        <input id="O" type="radio" name="Gender"></br>
+        <label for="address">Address :</label>
+        <textarea rows="5" columns="30" id="address">Enter Your Address</textarea></br>
+        <label for="phone">Phone No :</label>
+        <input id="phone" type="number" name='phone' placeholder="Enter Phone No."></br>
+        <label for="mail">E-mail :</label>
+        <input id="mail" type="email" name='mail' placeholder="Enter E-mail"></br>
+        <span>Hobbies :</span>
+        <label for="Sports">Sports</label>
+        <input id="Sports" type="checkbox">
+        <label for="net_surfing">Net Surfing</label>
+        <input id="net_surfing" type="checkbox">
+        <label for="Reading">Reading</label>
+        <input id="Reading" type="checkbox">
+        <label for="Travelling">Travelling</label>
+        <input id="Travelling" type="checkbox"></br>
+        <label for="city">City :</label>
+        <input type="text" id="city" placeholder="Enter City"></br>
+        <label for="state">State :</label>
+        <input type="text" id="state" placeholder="Enter State"></br>
+        <label for="Country">Country :</label>
+        <input type="text" id="Country" placeholder="Enter Country"></br>
+        <label for="college">College Name :</label>
+        <select id="college" name="college">
+            <option value="MSU Baroda">MSU Baroda</option>
+            <option value="DDU Nadiad">DDU Nadiad</option>
+            <option value="IIT Gandhinagar" selected>IIT Gandhinagar</option>
+            <option value="PDPU Ahmedabad">PDPU Ahmedabad</option>
+            <option value="SVIT Vasad">SVIT Vasad</option>
+        </select></br>
+        <button type='button' name="submit" onclick="{validate()}">Submit</button>
+    </form>
+
+
+    <script>
+      let name = document.querySelector('#fname').value;
+
+      function validate(){
+        if(!value == null){
+          alert("Please enter the name");
+        }
+      }
+    </script>
+</body>
+</html>
